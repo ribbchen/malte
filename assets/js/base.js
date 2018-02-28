@@ -2,7 +2,7 @@
   
   // nav bar on click for changing the active link and set content
   $(document).ready(function() {
-    $('a[href^="#"]').on("click", function(event) {
+    $('a[href^="#"]').on('click', function(event) {
       $('.active-link').removeClass('active-link');
       $(this).addClass('active-link');
       var target = $(this.getAttribute("href"));
@@ -13,4 +13,9 @@
         $(target).addClass(activeClass);
       }
     });
+
+    $('.jmk__hamburger').on('click', function(){
+        $(this).toggleClass('is-active');
+        $('.jmk__section--head-area').toggleClass('active-menu');
+    })
   });

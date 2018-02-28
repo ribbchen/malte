@@ -8,7 +8,7 @@ body {
 .jmk {
   &__body {
     width: 100%;
-    position: fixed;
+    position: relative;
     top: 0;
     bottom: 0;
     left: 0;
@@ -24,4 +24,13 @@ body {
 
 img {
   width: 100%;
+}
+
+@media screen and (min-width:1025px){
+  .jmk {
+    &__body {
+      position: fixed;
+    }
+  }
+  
 }

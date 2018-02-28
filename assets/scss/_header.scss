@@ -2,10 +2,10 @@
   &__nav {
     margin-top: 10vh;
     margin-bottom: 5vh;
-    text-align: center;
+    text-align: left;
     padding: 0;
     &-item {
-      display: inline-block;
+      display: block;
       list-style-type: none;
       a {
         display: block;
@@ -23,18 +23,19 @@
     right: 0;
     max-width: 400px;
     height:100%;
-    padding:0 50px 30px;
-    
+    padding:0 30px 30px;
   }
 }
 
-@media (min-width: 651px) {
+@media (min-width: 1025px) {
   .jmk {
+    &__menu-button{
+    display: none;
+    }
     &__nav {
-      text-align: left;
+ 
       &-item {
-        display: block;
-        list-style-type: none;
+       
         a {
           display: block;
           text-decoration: none;
@@ -43,6 +44,16 @@
           padding: 5px 0;
         }
       }
+    }
+    &__head-wrapper{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      max-width: 400px;
+      height:100%;
+      padding:0 50px 30px;
+      
     }
   }
 }

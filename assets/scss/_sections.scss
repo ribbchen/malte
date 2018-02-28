@@ -1,25 +1,52 @@
 .jmk {
- 
   &__section {
     height:100%;
     display: flex;  
     padding:0;
     position: relative;
     z-index: 15;
-    &--head-area {    
-      flex: 0 0 33%;
+    &--head-area {  
+      position: absolute;
+      z-index: 9000;  
+      left:-100%;
+      background-color:grey;
+      flex: 0 0 100%;
       justify-content: center;
       order:1;
+      transition: all 0.3s ease-in-out 0s;
       h1,
       p {
         color: white;
+      }
+      &.active-menu{
+        left:0;
+        max-width: 320px;
+        width: 100%;
+        transition: all 0.3s ease-in-out 0s;
       }
     }
     &--content-area{
       padding:0;
       flex: 1 0 auto;
       order: 2;
-
     }
   } 
+}
+
+@media screen and (min-width:1025px){
+  .jmk {
+    &__section {
+      &--head-area {
+        position: relative;    
+        left:0;
+        flex: 0 0 33%;
+        order:1;
+      }
+      &--content-area{
+        padding:0;
+        flex: 1 0 auto;
+        order: 2;
+      }
+    } 
+  }
 }
