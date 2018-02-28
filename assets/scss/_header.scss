@@ -1,0 +1,48 @@
+.jmk {
+  &__nav {
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    text-align: center;
+    padding: 0;
+    &-item {
+      display: inline-block;
+      list-style-type: none;
+      a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+        padding: 5px 15px;
+      }
+    }
+  }
+  &__head-wrapper{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 400px;
+    height:100%;
+    padding:0 50px 30px;
+    
+  }
+}
+
+@media (min-width: 651px) {
+  .jmk {
+    &__nav {
+      text-align: left;
+      &-item {
+        display: block;
+        list-style-type: none;
+        a {
+          display: block;
+          text-decoration: none;
+          color: white;
+          font-size: 30px;
+          padding: 5px 0;
+        }
+      }
+    }
+  }
+}

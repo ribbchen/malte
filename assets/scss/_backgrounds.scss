@@ -1,0 +1,11 @@
+@import '_variables';
+.jmk{
+    &__bg-container {
+        &--dark {
+          background: $gradient-beton-deepgrey;
+        }
+        &--light {
+          background: $gradient-creamywhite-beton;
+        }
+      }
+}

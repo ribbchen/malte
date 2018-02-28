@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  // outline: 1px solid red;
+}
+body {
+  font-family: "Courier Prime";
+}
+.jmk {
+  &__body {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    overflow: hidden;
+    display:flex;
+    flex:1;
+    flex-wrap: nowrap;
+    height: 100vh;
+  }
+}
+
+img {
+  width: 100%;
+}

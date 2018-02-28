@@ -1,0 +1,25 @@
+.jmk {
+ 
+  &__section {
+    height:100%;
+    display: flex;  
+    padding:0;
+    position: relative;
+    z-index: 15;
+    &--head-area {    
+      flex: 0 0 33%;
+      justify-content: center;
+      order:1;
+      h1,
+      p {
+        color: white;
+      }
+    }
+    &--content-area{
+      padding:0;
+      flex: 1 0 auto;
+      order: 2;
+
+    }
+  } 
+}
