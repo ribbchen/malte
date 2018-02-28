@@ -3,6 +3,8 @@
   // nav bar on click for changing the active link and set content
   $(document).ready(function() {
     $('a[href^="#"]').on('click', function(event) {
+      $('.jmk__section--head-area').toggleClass('active-menu');
+      $('.jmk__hamburger').toggleClass('is-active');
       $('.active-link').removeClass('active-link');
       $(this).addClass('active-link');
       var target = $(this.getAttribute("href"));
