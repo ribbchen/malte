@@ -7,7 +7,7 @@
 
 .jmk__gimmick-hover {
   text-decoration: none;
-  &:hover{
+  &:hover {
     & > .jmk__hash {
       color: $orange;
     }
@@ -49,77 +49,91 @@
   }
 }
 
-.ps-container{
+.ps-container {
   touch-action: none;
-    overflow: hidden !important;
+  overflow: hidden !important;
 }
 
-.jmk{
-  &__hamburger{
-    display:block;
+.jmk {
+  &__hamburger {
+    display: block;
     position: absolute;
-    height:50px;
-    width:50px;
+    height: 50px;
+    width: 50px;
     z-index: 90000;
-    left:5%;
-    top:5%;
-    &.is-active{
-      .hamburger-inner{
-        transition-delay: .12s;
-        transition-timing-function: cubic-bezier(.215,.61,.355,1);
-        transform: rotate(45deg);
-        &:before, &:after{
+    left: 5%;
+    top: 5%;
+    &.is-active {
+      .hamburger-inner {
+        background-color: $orange;
+        top: 2px;
+        transition-delay: 75ms;
+        transform: translate3d(0,10px,0) rotate(135deg);
+        transition-timing-function: cubic-bezier(.68,-.55,.265,1.55);
+        transition-duration: .275s;
+        &:before,
+        &:after {
           content: "";
           display: block;
-          background-color:black;
+          background-color:$orange;
           position: absolute;
           width: 40px;
           height: 4px;
           border-radius: 4px;
-
         }
-        &:before{
-          top: 0;
+        &:before {
+          transition-delay: 0s;
           opacity: 0;
         }
-        &:after{
-          bottom: 0;
-          transition: bottom 75ms ease,transform 75ms cubic-bezier(.215,.61,.355,1) .12s;
-          transform: rotate(-90deg);
+        &:after {
+          transition-delay: 75ms;
+          transform: translate3d(0,-20px,0) rotate(-270deg);
         }
       }
     }
-    .hamburger-box{
+    .hamburger-box {
       position: relative;
       display: inline-block;
       width: 40px;
       height: 24px;
     }
-    .hamburger-inner{
-      background-color:black;
+    .hamburger-inner {
+      background-color: black;
       position: absolute;
       width: 40px;
       height: 4px;
       border-radius: 4px;
-      transition: top 75ms ease .12s,opacity 75ms ease;
-      &:before, &:after{
+      margin-top: -2px;
+      top: 2px;
+      transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      transition-duration: 0.275s;
+      &:before,
+      &:after {
         content: "";
         display: block;
-        background-color:black;
+        background-color: black;
         position: absolute;
         width: 40px;
         height: 4px;
         border-radius: 4px;
-        transition: top 75ms ease .12s,opacity 75ms ease;
+        transition: top 75ms ease 0.12s, opacity 75ms ease;
       }
-      &:before{
-        top:-10px;
+      &:before {
+        top: 10px;
+        transition: opacity .125s ease .275s;
       }
-      &:after{
-        bottom:-10px;
+      &:after {
+        top: 20px;
+    transition: transform .275s cubic-bezier(.68,-.55,.265,1.55);
+        bottom: -10px;
       }
     }
-  
   }
-  
+}
+
+
+@media screen and(min-width:1025px){
+  .jmk__hamburger{
+    display:none;
+  }
 }
