@@ -1,0 +1,16 @@
+.filter{
+    color:white;
+    text-align: center;
+    padding:5px 10px;
+    
+    &__serie{
+        background-color:rgba(0, 0, 255, 0.5);
+    }
+    &__comedy{
+        background-color: rgba(0, 128, 0, 0.5);
+    }
+    &__drama{
+        background-color:rgba(255, 0, 0, 0.5);
+    }
+
+}
