@@ -5,7 +5,7 @@
   }
 }
 
-.jmk__gimmick-hover {
+.gimmick-hover {
   text-decoration: none;
   &:hover {
     & > .jmk__hash {
@@ -54,8 +54,7 @@
   overflow: hidden !important;
 }
 
-.jmk {
-  &__hamburger {
+ .hamburger {
     display: block;
     position: absolute;
     height: 50px;
@@ -129,11 +128,41 @@
       }
     }
   }
-}
+
+  .olive-branch {
+    z-index: 100;
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width:auto;
+    height:auto;
+    img {
+      height: 50px;
+      width: 50px;
+    }
+    &:before{
+      content:"";
+      opacity:0;
+      transition: opacity 0.3s ease;
+    }
+    &:hover {
+      background-color:rgba(0, 0, 0, 0.3);  
+      &:before {
+        content: attr(data-hover);
+        display:inline-block;
+        color:white;
+        padding: 0 0 0 15px;
+        opacity: 1;
+        transform: translate(0%,-100%);
+      }
+    }
+  }
+
 
 
 @media screen and(min-width:1025px){
-  .jmk__hamburger{
+  .hamburger{
     display:none;
   }
 }

@@ -1,6 +1,6 @@
 //mobile handler without resize 
 var imMobile = function(){
-  var $hamburger = $('.jmk__hamburger');
+  var $hamburger = $('.hamburger');
   if ($hamburger.css('display') === 'block') {
     return true;
   }
@@ -12,7 +12,7 @@ var imMobile = function(){
     $('a[href^="#"]').on('click', function(event) {
       if (imMobile()) {
         $('.jmk__section--head-area').toggleClass('active-menu');
-        $('.jmk__hamburger').toggleClass('is-active');
+        $('.hamburger').toggleClass('is-active');
       }
 
       $('.active-link').removeClass('active-link');
@@ -26,7 +26,7 @@ var imMobile = function(){
       }
     });
 
-    $('.jmk__hamburger').on('click', function(){
+    $('.hamburger').on('click', function(){
         $(this).toggleClass('is-active');
         $('.jmk__section--head-area').toggleClass('active-menu');
     });
