@@ -2,6 +2,14 @@
 var form = document.getElementById('contact-form');
 form.addEventListener("focusout", isValid);
 
+form.addEventListener('focusin', removePlaceholder);
+
+
+function removePlaceholder(el){
+    if(el.target.type === "textarea" && el.target.value === "Nachricht"){
+        el.target.value = "";
+    }
+}
 
 //sets final state class for better design
 function setFillState(el) {

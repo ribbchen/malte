@@ -54,15 +54,24 @@
             <span class="special-text--orange">Drehbuchautor / Dramaturg</span>
           </p>
         </div>
+        <div class="impressum-link-container">
+          <a href="#impressum">
+            <span class="jmk__impressum-link">Impressum </span>
+          </a>
+        </div>
       </div>
     </section>
     <section class="jmk__section jmk__section--content-area ">
-      <div class="content-wrapper jmk__slide jmk__slide--active" id="home"> 
+      <div class="content-wrapper jmk__slide jmk__slide--active" id="home">
         <div class="jmk__content">
-          
-            <h2 class="content-headline">home</h2>
-          <div>dis is content</div>
-          <img src="assets/img/Homebild.jpg" alt="">
+          <h2 class="content-headline">home</h2>
+          <div id="typewriter">
+            Der Mann in Schwarz floh durch die Wüste, und der Revolvermann folgte ihm. Die Wüste war der Inbegriff aller Wüsten; sie
+            war riesig und schien sich in alle Richtungen Parseks bis zum Himmel zu erstrecken. Gelegentlich wies ein Grabsteinzeichen
+            den Weg, denn einstmals war der verwehte Pfad, der sich seinen Weg durch die dicken Salzkrusten bahnte, eine
+            Straße gewesen, auf der Kutschen gefahren waren. Seither hatte die Welt sich weitergedreht.
+            <span class="special-text--orange">Die Welt war leer geworden.</span>
+          </div>
         </div>
       </div>
       <div class="content-wrapper jmk__slide" id="work">
@@ -208,7 +217,10 @@
       <div class="content-wrapper jmk__slide" id="bio">
         <div class="jmk__content">
           <h2 class="content-headline">bio</h2>
-          <div class="jmk__intro">Janosch Kosack, geboren am 10. Mai 1991 in Pforzheim, arbeitet als freier Drehbuchautor in Berlin.
+          <div class="jmk__intro">
+            <img class="jmk__img--bio"src="assets/img/Bio_Bild.jpg" alt="Malte">
+            <br>
+            Janosch Kosack, geboren am 10. Mai 1991 in Pforzheim, arbeitet als freier Drehbuchautor in Berlin.
             <br>
             <br>Nachdem er in Wuppertal sein Abitur beendet hatte, studierte er einige Zeit in Leipzig Rechtswissenschaften.
             2011 begann er ein Praktikum bei Carolin Haasis in der dramaturgischen Abteilung der Teamworx GmbH. Es folgten
@@ -254,33 +266,39 @@
       </div>
       <div class="content-wrapper jmk__slide" id="contact">
         <div class="jmk__content">
-            <h2 class="content-headline">contact</h2>
+          <h2 class="content-headline">contact</h2>
+
+          <div class="jmk__intro">
+            <h3>Kontakt, Fragen und Anfragen:</h3>
+            <p>Schreiben Sie mir gerne an
+              <a href="mailto:mail@j-kosack.de" alt="Email Adresse">mail@j-kosack.de</a> oder nutzen Sie das untenstehende Kontaktformular.
+            </p>
+          </div>
           <div class="form-container">
-            <form action="https://formspree.io/ribbchen@gmail.com"
-            method="POST" id="contact-form">
-            <input type="hidden" name="_subject" value="Janosch Kosack Kontaktformular" />
+            <form action="https://formspree.io/ribbchen@gmail.com" method="POST" id="contact-form">
+              <input type="hidden" name="_subject" value="Janosch Kosack Kontaktformular" />
               <div class="input-placeholder--singleline">
-                  <input type="text" class="form__input form__input--singleline" tabindex="1" name="nachname">
-                  <label class="form__input--label">Nachname</label>
+                <input type="text" class="form__input form__input--singleline" tabindex="1" name="nachname">
+                <label class="form__input--label">Nachname</label>
               </div>
               <div class="input-placeholder--singleline">
-                  <input type="text" class="form__input form__input--singleline" tabindex="2" name="vorname">
-                  <label class="form__input--label">Vorname</label>
+                <input type="text" class="form__input form__input--singleline" tabindex="2" name="vorname">
+                <label class="form__input--label">Vorname</label>
               </div>
               <div class="input-placeholder--singleline">
-                  <input type="text" class="form__input form__input--singleline" tabindex="3" name="unternehmen">
-                  <label class="form__input--label">Unternehmen</label>
+                <input type="text" class="form__input form__input--singleline" tabindex="3" name="unternehmen">
+                <label class="form__input--label">Unternehmen</label>
               </div>
               <div class="input-placeholder--singleline">
-                  <input type="tel" class="form__input form__input--singleline" tabindex="4" name="telefonnummer">
-                  <label class="form__input--label">Telefonnummer</label>
+                <input type="tel" class="form__input form__input--singleline" tabindex="4" name="telefonnummer">
+                <label class="form__input--label">Telefonnummer</label>
               </div>
               <div class="input-placeholder--singleline">
-                  <input type="email" class="form__input form__input--singleline" tabindex="5" name="email">
-                  <label class="form__input--label">Email</label>
+                <input type="email" class="form__input form__input--singleline" tabindex="5" name="email">
+                <label class="form__input--label">Email</label>
               </div>
               <div class="input-placeholder--multiline">
-                  <textarea class="form__input form__input--multiline" tabindex="6" placeholder="Nachricht" name="Nachricht">Nachricht</textarea >
+                <textarea class="form__input form__input--multiline" tabindex="6" placeholder="Nachricht" name="Nachricht">Nachricht</textarea >
                   
               </div>
               <div class="input-placeholder--button">
@@ -288,6 +306,90 @@
               </div>
           </form>
           </div>
+        </div>
+      </div>
+
+      <div class="content-wrapper jmk__slide" id="impressum">
+          <div class="jmk__content">
+           <div class="jmk__impressum-container">
+            <div>            
+            <h2>Impressum</h2>
+
+            Angaben gemäß § 5 TMG
+            <br> Janosch Kosack
+            <br> Osloer Straße 20e
+            <br> 13359 Berlin
+            <br>
+            <b>Vertreten durch:</b>
+            <br> Janosch Kosack
+            <br>
+            <b>Kontakt:</b>
+            <br> Phone: +49 163 452 29 51
+            <br> E-Mail:
+            <a href="mailto:mail@j-kosack.de" alt="Email Adresse">mail@j-kosack.de</a>
+            </div>
+<div>
+<h3>Haftungsausschluss:</h3> 
+
+<b>Haftung für Inhalte</b>
+<br>
+Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+<br>
+<b>Haftung für Links</b>
+<br>
+Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+<br>
+<b>Urheberrecht</b>
+<br>
+Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
+<br>
+<b>Datenschutz</b>
+<br>
+Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. 
+Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich. 
+Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.
+<br>
+
+<b>Google Analytics</b>
+<br>
+Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. (''Google''). Google Analytics verwendet sog. ''Cookies'', Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglicht. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieser Website (einschließlich Ihrer IP-Adresse) wird an einen Server von Google in den USA übertragen und dort gespeichert. Google wird diese Informationen benutzen, um Ihre Nutzung der Website auszuwerten, um Reports über die Websiteaktivitäten für die Websitebetreiber zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen zu erbringen. Auch wird Google diese Informationen gegebenenfalls an Dritte übertragen, sofern dies gesetzlich vorgeschrieben oder soweit Dritte diese Daten im Auftrag von Google verarbeiten. Google wird in keinem Fall Ihre IP-Adresse mit anderen Daten der Google in Verbindung bringen. Sie können die Installation der Cookies durch eine entsprechende Einstellung Ihrer Browser Software verhindern; wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website voll umfänglich nutzen können. Durch die Nutzung dieser Website erklären Sie sich mit der Bearbeitung der über Sie erhobenen Daten durch Google in der zuvor beschriebenen Art und Weise und zu dem zuvor benannten Zweck einverstanden.
+<br>
+<b>Google AdSense</b>
+<br>
+Diese Website benutzt Google Adsense, einen Webanzeigendienst der Google Inc., USA (''Google''). Google Adsense verwendet sog. ''Cookies'' (Textdateien), die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglicht. Google Adsense verwendet auch sog. ''Web Beacons'' (kleine unsichtbare Grafiken) zur Sammlung von Informationen. Durch die Verwendung des Web Beacons können einfache Aktionen wie der Besucherverkehr auf der Webseite aufgezeichnet und gesammelt werden. Die durch den Cookie und/oder Web Beacon erzeugten Informationen über Ihre Benutzung dieser Website (einschließlich Ihrer IP-Adresse) werden an einen Server von Google in den USA übertragen und dort gespeichert. Google wird diese Informationen benutzen, um Ihre Nutzung der Website im Hinblick auf die Anzeigen auszuwerten, um Reports über die Websiteaktivitäten und Anzeigen für die Websitebetreiber zusammenzustellen und um weitere mit der Websitenutzung und der Internetnutzung verbundene Dienstleistungen zu erbringen. Auch wird Google diese Informationen gegebenenfalls an Dritte übertragen, sofern dies gesetzlich vorgeschrieben oder soweit Dritte diese Daten im Auftrag von Google verarbeiten. Google wird in keinem Fall Ihre IP-Adresse mit anderen Daten der Google in Verbindung bringen. Das Speichern von Cookies auf Ihrer Festplatte und die Anzeige von Web Beacons können Sie verhindern, indem Sie in Ihren Browser-Einstellungen ''keine Cookies akzeptieren'' wählen (Im MS Internet-Explorer unter ''Extras > Internetoptionen > Datenschutz > Einstellung''; im Firefox unter ''Extras > Einstellungen > Datenschutz > Cookies''); wir weisen Sie jedoch darauf hin, dass Sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website voll umfänglich nutzen können. Durch die Nutzung dieser Website erklären Sie sich mit der Bearbeitung der über Sie erhobenen Daten durch Google in der zuvor beschriebenen Art und Weise und zu dem zuvor benannten Zweck einverstanden.
+<br>
+<b>Datenschutzerklärung</b>
+<br>
+<b>Grundsatz</b>
+Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst und behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.   
+<br>
+<b>Erheben von Daten</b>
+<br>
+Wir erheben und verarbeiten personenbezogene Daten nur, soweit diese für die Begründung und inhaltliche Ausgestaltung oder Änderung des Rechtsverhältnisses erforderlich sind (Bestandsdaten). Personenbezogene Daten über die Inanspruchnahme unserer Internetseiten (Nutzungsdaten) erheben wir nicht.
+<br>
+Datenverarbeitung auf dieser Internetseite
+Wir erheben und speichern automatisch Informationen in Log Files, die Ihr Browser automatisch an uns übermittelt. Dies sind Browsertyp/ Browserversion, verwendetes Betriebssystem, Referrer URL und  Uhrzeit der Serveranfrage. Diese Daten sind nicht bestimmten Personen zuordenbar. Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen.
+<br>
+<b>Nutzung von Cookies</b>
+<br>
+Die Internetseiten verwenden teilweise so genannte Cookies. Diese dienen dazu, unser Angebot nutzerfreundlicher, effektiver und sicherer zu machen. Cookies sind kleine Textdateien, die auf Ihrem Rechner abgelegt werden und die Ihr Browser speichert. Die meisten der von uns verwendeten Cookies sind so genannte „Session-Cookies“. Sie werden nach Ende Ihres Besuchs automatisch gelöscht. Cookies richten auf Ihrem Rechner keinen Schaden an und enthalten keine Viren.
+<br>
+<b>Kontaktformular</b>
+<br>
+Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter. Die Daten werden nach abgeschlossener Bearbeitung Ihrer Anfrage gelöscht.
+Sie können Ihre Einwilligung jederzeit für die Zukunft per E-Mail an mail@mail.de widerrufen.
+<br>
+Datenschutzerklärung für die Nutzung von Google Analytics
+Diese Website benutzt Google Analytics, einen Webanalysedienst der Google Inc. („Google“). Google Analytics verwendet sog. „Cookies“, Textdateien, die auf Ihrem Computer gespeichert werden und die eine Analyse der Benutzung der Website durch Sie ermöglichen. Die durch den Cookie erzeugten Informationen über Ihre Benutzung dieser Website werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert.
+Mehr Informationen zum Umgang mit Nutzerdaten bei Google Analytics finden Sie in der Datenschutzerklärung von Google: https://support.google.com/analytics/answer/6004245?hl=de
+<br>
+Widerspruchsrecht und Auskunftsrecht
+Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre bei uns gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten.
+Wenn Sie Fragen hierzu haben, die Ihnen diese Datenschutzerklärung nicht beantworten konnte, können Sie sich jederzeit unter folgender E-Mail-Adresse oder über die im Impressum angegebenen Kontaktdaten an uns wenden: mail@mail.de
+<br>
+</div>
+
+           </div>
         </div>
       </div>
     </section>
@@ -299,4 +401,6 @@
 <script src="assets/js/base.js"></script>
 
 <script src="assets/js/formValidation.js"></script>
+
+<script src="assets/js/typewriter.js"></script>
 </html>

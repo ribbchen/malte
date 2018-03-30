@@ -20,7 +20,26 @@ body {
     flex-wrap: nowrap;
     height: 100vh;
   }
+  &__img{
+    &--bio{
+      margin-bottom:15px;
+    }
+  }
 }
+
+.impressum-link-container{
+  text-align: center;
+  margin-top:40px;
+  a{
+    text-decoration: none;
+    color:$creamywhite;
+
+  }
+}
+a{
+  color:$orange;
+}
+
 
 img {
   width: 100%;
@@ -28,7 +47,9 @@ img {
 h1{
   font-size: 30px;
 }
-
+.jmk__intro{
+  margin-bottom:50px;
+}
 
 .imdb-link {
    

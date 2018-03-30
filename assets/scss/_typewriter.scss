@@ -1,0 +1,41 @@
+
+#typewriter{
+  width:100%;
+		font-size: 16px;
+		margin: 0;
+
+		&:after{
+			content: "";
+			animation: blink 500ms linear infinite alternate;
+		}
+}
+
+@-webkit-keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@-moz-keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@media screen and (min-width:1025px){
+	#typewriter{
+		width:100%;
+			  font-size: 2em;
+			  margin: 0;
+			  font-family: "Courier New";
+	  
+			  &:after{
+				  content: "|";
+
+				  animation: blink 500ms linear infinite alternate;
+			  }
+	  }
+}
