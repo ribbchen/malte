@@ -1,0 +1,31 @@
+@import '_variables';
+.imdb-link {
+   
+    &.in-title{
+        vertical-align: middle;
+        display: none;
+    }
+    &.in-filter{
+        text-align:center;
+        display:inline-block;
+    }
+    img{
+        width: 30%;
+        height: 30%;
+    }
+}
+@media screen and (min-width:1025px){
+    .imdb-link {
+   
+        &.in-title{
+            display: inline-flex;
+        }
+        &.in-filter{
+            display:none;
+        }
+        img{
+            width: 30%;
+            height: 30%;
+        }
+    }
+}

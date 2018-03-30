@@ -97,7 +97,7 @@
       height: 24px;
     }
     .hamburger-inner {
-      background-color: black;
+      background-color: $beton;
       position: absolute;
       width: 40px;
       height: 4px;
@@ -110,7 +110,7 @@
       &:after {
         content: "";
         display: block;
-        background-color: black;
+        background-color: $beton;
         position: absolute;
         width: 40px;
         height: 4px;
