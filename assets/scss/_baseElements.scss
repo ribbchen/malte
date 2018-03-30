@@ -25,6 +25,26 @@ body {
 img {
   width: 100%;
 }
+h1{
+  font-size: 30px;
+}
+
+
+.imdb-link {
+   
+  &.in-title{
+      vertical-align: middle;
+      display: none;
+  }
+  &.in-filter{
+      text-align:center;
+      display:inline-block;
+  }
+  img{
+      width: 30%;
+      height: 30%;
+  }
+}
 
 @media screen and (min-width:1025px){
   .jmk {
@@ -32,5 +52,23 @@ img {
       position: fixed;
     }
   }
-  
+  h1{
+    font-size: 26px;
+  }
+  .content-headline{
+    display:none;
+  }
+  .imdb-link {
+   
+    &.in-title{
+        display: inline-flex;
+    }
+    &.in-filter{
+        display:none;
+    }
+    img{
+        width: 30%;
+        height: 30%;
+    }
+}
 }
