@@ -1,0 +1,98 @@
+@import '_variables';
+.form-container {
+    width: 100%;
+    >form {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+.input-placeholder {
+    &--singleline {
+        width: 100%;
+        position: relative;
+    }
+    &--multiline {
+        width: 100%;
+    }
+    &--button {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+}
+
+.form {
+    &__input {
+        width: 100%;
+        outline: none;
+        padding: 15px 5px;
+        margin-bottom: 25px;
+        &--label {
+            transition: 0.3s ease-in-out all;
+            position: absolute;
+            top: 15px;
+            font-size: 16px;
+            &.is-filled{
+                font-size: 12px;
+                top: 0px;
+            }
+            &.is-invalid{
+                font-size: 12px;
+                top: 0px;
+                color:red;
+            }
+            &.is-valid{
+                font-size: 12px;
+                top: 0px;
+                color:green;
+            }
+        }
+        &--singleline {
+            border: none;
+            border-bottom: 1px solid $beton;
+            transition: 0.3s ease-in-out border-bottom;
+            height: 60px;
+            &:focus {
+                border-bottom: 1px solid $orange;
+                transition: 0.3s ease-in-out border-bottom;
+                &+.form__input--label {
+                    transition: 0.3s ease-in-out all;
+                    font-size: 12px;
+                    top: 0px;
+                }
+            }
+        }
+        &--multiline {
+            border: 1px solid $beton;
+            transition: 0.3s ease-in-out border-bottom;
+            &:focus {
+                border: 1px solid $orange;
+                transition: 0.3s ease-in-out border-bottom;
+            }
+        }
+        &--checkbox {}
+        &--button {
+            text-align: center;
+            width: auto;
+            padding: 10px 25px;
+            border: none;
+            background: $orange;
+            color: $creamywhite;
+        }
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .input-placeholder {
+        &--singleline {
+            width: 45%;
+            position: relative;
+        }
+        &--multiline {
+            width: 100%;
+        }
+    }
+}

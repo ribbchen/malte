@@ -1,61 +1,60 @@
 @import "_variables";
 .special-text {
-  &--orange {
-    color: $orange;
-  }
+    &--orange {
+        color: $orange;
+    }
 }
 
-.jmk__gimmick-hover {
-  text-decoration: none;
-  &:hover {
-    & > .jmk__hash {
-      color: $orange;
+.gimmick-hover {
+    text-decoration: none;
+    &:hover {
+        &>.jmk__hash {
+            color: $orange;
+        }
+        &>.jmk__link {
+            &:before {
+                visibility: visible;
+                transform: scaleX(1);
+            }
+        }
     }
-    & > .jmk__link {
-      &:before {
-        visibility: visible;
-        transform: scaleX(1);
-      }
+    &.active-link {
+        &>.jmk__hash {
+            color: $orange;
+        }
+        &>.jmk__link {
+            &:before {
+                visibility: visible;
+                transform: scaleX(1);
+            }
+        }
     }
-  }
-  &.active-link {
-    & > .jmk__hash {
-      color: $orange;
+    .jmk__link {
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: $orange;
+            visibility: hidden;
+            transform: scaleX(0);
+            transition: all 0.3s ease-in-out 0s;
+        }
     }
-    & > .jmk__link {
-      &:before {
-        visibility: visible;
-        transform: scaleX(1);
-      }
+    .jmk__hash {
+        transition: all 0.3s ease-in-out 0s;
     }
-  }
-  .jmk__link {
-    position: relative;
-    &:before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      bottom: 0;
-      left: 0;
-      background-color: $orange;
-      visibility: hidden;
-      transform: scaleX(0);
-      transition: all 0.3s ease-in-out 0s;
-    }
-  }
-  .jmk__hash {
-    transition: all 0.3s ease-in-out 0s;
-  }
 }
 
 .ps-container {
-  touch-action: none;
-  overflow: hidden !important;
+    touch-action: none;
+    overflow: hidden !important;
 }
 
-.jmk {
-  &__hamburger {
+.hamburger {
     display: block;
     position: absolute;
     height: 50px;
@@ -64,76 +63,106 @@
     left: 5%;
     top: 5%;
     &.is-active {
-      .hamburger-inner {
-        background-color: $orange;
-        top: 2px;
-        transition-delay: 75ms;
-        transform: translate3d(0,10px,0) rotate(135deg);
-        transition-timing-function: cubic-bezier(.68,-.55,.265,1.55);
-        transition-duration: .275s;
-        &:before,
-        &:after {
-          content: "";
-          display: block;
-          background-color:$orange;
-          position: absolute;
-          width: 40px;
-          height: 4px;
-          border-radius: 4px;
+        .hamburger-inner {
+            background-color: $orange;
+            top: 2px;
+            transition-delay: 75ms;
+            transform: translate3d(0, 10px, 0) rotate(135deg);
+            transition-timing-function: cubic-bezier(.68, -.55, .265, 1.55);
+            transition-duration: .275s;
+            &:before,
+            &:after {
+                content: "";
+                display: block;
+                background-color: $orange;
+                position: absolute;
+                width: 40px;
+                height: 4px;
+                border-radius: 4px;
+            }
+            &:before {
+                transition-delay: 0s;
+                opacity: 0;
+            }
+            &:after {
+                transition-delay: 75ms;
+                transform: translate3d(0, -20px, 0) rotate(-270deg);
+            }
         }
-        &:before {
-          transition-delay: 0s;
-          opacity: 0;
-        }
-        &:after {
-          transition-delay: 75ms;
-          transform: translate3d(0,-20px,0) rotate(-270deg);
-        }
-      }
     }
     .hamburger-box {
-      position: relative;
-      display: inline-block;
-      width: 40px;
-      height: 24px;
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 24px;
     }
     .hamburger-inner {
-      background-color: black;
-      position: absolute;
-      width: 40px;
-      height: 4px;
-      border-radius: 4px;
-      margin-top: -2px;
-      top: 2px;
-      transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-      transition-duration: 0.275s;
-      &:before,
-      &:after {
-        content: "";
-        display: block;
-        background-color: black;
+        background-color: $beton;
         position: absolute;
         width: 40px;
         height: 4px;
         border-radius: 4px;
-        transition: top 75ms ease 0.12s, opacity 75ms ease;
-      }
-      &:before {
-        top: 10px;
-        transition: opacity .125s ease .275s;
-      }
-      &:after {
-        top: 20px;
-    transition: transform .275s cubic-bezier(.68,-.55,.265,1.55);
-        bottom: -10px;
-      }
+        margin-top: -2px;
+        top: 2px;
+        transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transition-duration: 0.275s;
+        &:before,
+        &:after {
+            content: "";
+            display: block;
+            background-color: $beton;
+            position: absolute;
+            width: 40px;
+            height: 4px;
+            border-radius: 4px;
+            transition: top 75ms ease 0.12s, opacity 75ms ease;
+        }
+        &:before {
+            top: 10px;
+            transition: opacity .125s ease .275s;
+        }
+        &:after {
+            top: 20px;
+            transition: transform .275s cubic-bezier(.68, -.55, .265, 1.55);
+            bottom: -10px;
+        }
     }
-  }
 }
 
+.olive-branch {
+    z-index: 100;
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: auto;
+    height: auto;
+    img {
+        height: 50px;
+        width: 50px;
+    }
+    span {
+        display: none;
+    } // &:before{
+    //   content:"";
+    //   opacity:0;
+    //   transition: opacity 0.3s ease;
+    // }
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+        span {
+            display: inline-block;
+            padding: 10px;
+            color: white;
+        }
+    }
+}
 
-@media screen and(min-width:1025px){
-  .jmk__hamburger{
-    display:none;
-  }
+@media screen and(min-width:1025px) {
+    .hamburger {
+        display: none;
+    }
+    .olive-branch {
+        display: flex;
+    }
 }

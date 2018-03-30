@@ -1,6 +1,7 @@
 0 info it worked if it ends with ok
 1 verbose cli [ 'C:\\Program Files (x86)\\Nodist\\v-x64\\6.9.1\\node.exe',
 1 verbose cli   'C:\\Program Files (x86)\\Nodist\\npmv\\3.10.8\\bin\\npm-cli.js',
+1 verbose cli   'run',
 1 verbose cli   'start' ]
 2 info using npm@3.10.8
 3 info using node@v6.9.1
@@ -9,8 +10,8 @@
 6 silly lifecycle janosch_kosack@1.0.0~prestart: no script for prestart, continuing
 7 info lifecycle janosch_kosack@1.0.0~start: janosch_kosack@1.0.0
 8 verbose lifecycle janosch_kosack@1.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle janosch_kosack@1.0.0~start: PATH: C:\Program Files (x86)\Nodist\npmv\3.10.8\bin\node-gyp-bin;D:\Privates\Malte\jmkv2.1\node_modules\.bin;C:\Program Files (x86)\Nodist\v-x64\6.9.1;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Nodist\bin;C:\Program Files\dotnet\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Calibre2\;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;C:\Users\nk.patrib90\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;
-10 verbose lifecycle janosch_kosack@1.0.0~start: CWD: D:\Privates\Malte\jmkv2.1
+9 verbose lifecycle janosch_kosack@1.0.0~start: PATH: C:\Program Files (x86)\Nodist\npmv\3.10.8\bin\node-gyp-bin;C:\Privates\GIT\malte\node_modules\.bin;C:\Program Files (x86)\Nodist\v-x64\6.9.1;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\ManagementStudio\;C:\Program Files\dotnet\;C:\Program Files\TortoiseGit\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\SlikSvn\bin;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Nodist\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\nk.patrib90\AppData\Local\Microsoft\WindowsApps;;C:\Program Files (x86)\Microsoft VS Code\bin
+10 verbose lifecycle janosch_kosack@1.0.0~start: CWD: C:\Privates\GIT\malte
 11 silly lifecycle janosch_kosack@1.0.0~start: Args: [ '/d /s /c', 'gulp' ]
 12 silly lifecycle janosch_kosack@1.0.0~start: Returned: code: 3221225786  signal: null
 13 info lifecycle janosch_kosack@1.0.0~start: Failed to exec start script
@@ -25,9 +26,9 @@
 14 verbose stack     at maybeClose (internal/child_process.js:877:16)
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
 15 verbose pkgid janosch_kosack@1.0.0
-16 verbose cwd D:\Privates\Malte\jmkv2.1
+16 verbose cwd C:\Privates\GIT\malte
 17 error Windows_NT 10.0.16299
-18 error argv "C:\\Program Files (x86)\\Nodist\\v-x64\\6.9.1\\node.exe" "C:\\Program Files (x86)\\Nodist\\npmv\\3.10.8\\bin\\npm-cli.js" "start"
+18 error argv "C:\\Program Files (x86)\\Nodist\\v-x64\\6.9.1\\node.exe" "C:\\Program Files (x86)\\Nodist\\npmv\\3.10.8\\bin\\npm-cli.js" "run" "start"
 19 error node v6.9.1
 20 error npm  v3.10.8
 21 error code ELIFECYCLE
