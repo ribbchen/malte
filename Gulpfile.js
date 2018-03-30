@@ -3,6 +3,8 @@ var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync').create();
+var cssmin = require('gulp-cssmin');
+var rename = require('gulp-rename');
 
 var input = './assets/scss/*.scss';
 var output = './assets/css';
@@ -27,6 +29,7 @@ gulp.task('serve', ['sass'], function() {
     gulp.watch("*.html").on('change', browserSync.reload);
 });
 
+
 gulp.task('sass', function() {
     return gulp
         .src(input)
@@ -50,13 +53,23 @@ gulp.task('watch', function() {
       console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
     });
 });
-
-gulp.task('default', ['serve']);
+// gulp.task('cssmin', function () {
+//   gulp.src('src/**/*.css')
+      
+// });
 
 gulp.task('prod', function () {
   return gulp
     .src(input)
     .pipe(sass({ outputStyle: 'compressed' }))
     .pipe(autoprefixer(autoprefixerOptions))
+    .pipe(cssmin())
+    .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest(output));
 });
+  
+gulp.task('default', ['serve', 'prod']);
+
+gulp.task('prodd', ['sass','cssmin'])
+
+
