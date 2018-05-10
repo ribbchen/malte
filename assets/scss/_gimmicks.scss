@@ -3,6 +3,11 @@
     &--orange {
         color: $orange;
     }
+    &--author{
+        display: block;
+        text-align: right;
+        font-style: italic;
+    }
 }
 
 .gimmick-hover {
