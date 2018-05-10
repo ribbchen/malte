@@ -1,6 +1,7 @@
 @import "_variables";
 .special-text {
     &--orange {
+        display: block;
         color: $orange;
     }
     &--author{

@@ -1,10 +1,11 @@
 * {
-  box-sizing: border-box;
-  // outline: 1px solid red;
+  box-sizing: border-box; // outline: 1px solid red;
 }
+
 body {
   font-family: "Courier Prime";
 }
+
 .jmk {
   &__body {
     width: 100%;
@@ -15,82 +16,93 @@ body {
     right: 0;
     z-index: 10;
     overflow: hidden;
-    display:flex;
-    flex:1;
+    display: flex;
+    flex: 1;
     flex-wrap: nowrap;
     height: 100vh;
   }
-  &__img{
-    &--bio{
-      margin-bottom:15px;
+  &__img {
+    &--bio {
+      margin:  0 0 15px 0;
+      float: none;
+      margin-left: 0;
+      height: 100%;
+      width: 100%;
     }
   }
 }
 
-.impressum-link-container{
-  text-align: center;
-  margin-top:40px;
-  margin-bottom:20px;
-  a{
+.impressum-link-container {
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  a {
     text-decoration: none;
-    color:$creamywhite;
-
+    color: $creamywhite;
   }
 }
-a{
-  color:$orange;
-}
 
+a {
+  color: $orange;
+}
 
 img {
   width: 100%;
 }
-h1{
+
+h1 {
   font-size: 30px;
 }
-.jmk__intro{
-  margin-bottom:50px;
+
+.jmk__intro {
+  margin-bottom: 50px;
 }
 
 .imdb-link {
-   
-  &.in-title{
-      vertical-align: middle;
-      display: none;
+  &.in-title {
+    vertical-align: middle;
+    display: none;
   }
-  &.in-filter{
-      text-align:center;
-      display:inline-block;
+  &.in-filter {
+    text-align: center;
+    display: inline-block;
   }
-  img{
-      width: 30%;
-      height: 30%;
+  img {
+    width: 30%;
+    height: 30%;
   }
 }
 
-@media screen and (min-width:1025px){
+@media screen and (min-width:1025px) {
   .jmk {
     &__body {
       position: fixed;
     }
+    &__img {
+      &--bio {
+        margin:20px 0 15px 15px;
+        float: right;
+        height: 50%;
+        width: 50%;
+      }
+    }
   }
-  h1{
+  h1 {
     font-size: 26px;
   }
-  .content-headline{
-    display:none;
+  .content-headline {
+    display: none;
   }
   .imdb-link {
-   
-    &.in-title{
-        display: inline-flex;
+    &.in-title {
+      display: inline-flex;
     }
-    &.in-filter{
-        display:none;
+    &.in-filter {
+      display: none;
     }
-    img{
-        width: 30%;
-        height: 30%;
+    img {
+      width: 30%;
+      height: 30%;
     }
-}
+  }
 }
